@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+button {
+    background-color: rgb(76, 145, 209);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: 0.2s ease-in-out;
+}
+
+input[type='text'],
+input[type='email'] {
+    padding: 8px;
+}
+
+button:hover {
+    background-color: rgb(46, 85, 122);
+}
+
+.content-container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 16px;
+}
+
+.content-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-container > div > button {
+    width: 250px;
+}
+
+.header > h1 {
+    grid-column: 1 / -1;
+    font-family: 'Bitter', 'sans-serif';
+    font-size: 2.6rem;
+}
+
+.info-container {
+    border: 1px solid black;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 250px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow-x: auto;
+}
+
+.info-btns {
+    display: flex;
+    gap: 6px;
+}
+
+.error-text {
+    color: red;
+    font-size: 0.8rem;
+    width: 150px;
+}
